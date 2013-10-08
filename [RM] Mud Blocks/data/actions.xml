@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+	<action>
+		<id>qMudBlock</id>
+		<name>Mud Block</name>
+		<priorityID>wallconstruction</priorityID>
+		<queue>
+			<pick>rmmud</pick>
+			<destroyItem />
+			<createItem>mudBlock</createItem>
+		</queue>
+	</action>
+</actions>

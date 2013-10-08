@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<misc name="[RM] Misc" icon="dirt">
+		<item id="qMudBlock" code="QUEUEANDPLACEAREA" parameter="qMudBlock" icon="dirt" />
+		<item id="back" name="Back" code="BACK" icon="ui_back" />
+	</misc>
+</menu>

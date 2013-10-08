@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+	<mudBlock>
+		<name>Mud Block</name>
+		<description>Fill spaces and block fluids.</description>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>false</glue>
+		<base>true</base>
+		<bury>false</bury>
+		<blocky>true</blocky>
+		<buryLocked>false</buryLocked>
+		<blockFluids>true</blockFluids>
+		<alwaysOperative>false</alwaysOperative>
+	</mudBlock>
+</items>
