@@ -17,5 +17,9 @@ There is a lot more planned and the mod will be modular meaning that you can tur
 
 To install Realism Mod copy all of the mods to your "%userprofile%/.towns/mods/" directory. I do not know where they would go for Linux or Mac users.
 
+v0.11 - 14.10.2013
+Added the ability to have all harvested items grow on any terrain and block type including the Mud Block.
+- Thanks to JackPS9 for showing me an example
+
 v0.1 - 8.10.2013
 The first release of the Realism Mod. The first part is the Mud Blocks mod that allows you to fill in empty spaces.

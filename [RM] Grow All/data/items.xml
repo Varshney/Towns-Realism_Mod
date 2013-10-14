@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<items>
+	<delete id="appleseed" />
+	<delete id="plantedbushapple" />
+	<delete id="plantedappletree" />
+	<delete id="plantedharvestingappletree" />
+	<delete id="plantedharvestedappletree" />
+	<appleseed>
+		<name esES="Semilla de manzano">Apple seedling</name>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedbushapple</maxAgeItem>
+		<action>qcut</action>
+	</appleseed>
+	<plantedbushapple>
+		<name esES="Arbusto de manzano plantado">Planted apple bush</name>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedappletree</maxAgeItem>
+		<action>qcut</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedbushapple>
+	<plantedappletree>
+		<name esES="Manzano plantado">Planted apple tree</name>
+		<locked>true</locked>
+		<action>qchopfruittrees</action>
+		<action>qharvestpapple</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedappletree>
+	<plantedharvestingappletree>
+		<name esES="Manzano plantado">Planted apple tree</name>
+		<spawn>apple</spawn>
+		<spawnTurns>1</spawnTurns>
+		<maxAge>2</maxAge>
+		<maxAgeItem>plantedharvestedappletree</maxAgeItem>
+		<action>qchop</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedharvestingappletree>
+	<plantedharvestedappletree>
+		<name esES="Manzano plantado">Planted apple tree</name>
+		<maxAge>1d2880+6400</maxAge>
+		<maxAgeItem>plantedappletree</maxAgeItem>
+		<action>qchop</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedharvestedappletree>
+
+	<delete id="pearseed" />
+	<delete id="plantedbushpear" />
+	<delete id="plantedpeartree" />
+	<delete id="plantedharvestingpeartree" />
+	<delete id="plantedharvestedpeartree" />
+	<pearseed>
+		<name esES="Semilla de peral">Pear seedling</name>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedbushpear</maxAgeItem>
+		<action>qcut</action>
+	</pearseed>
+	<plantedbushpear>
+		<name esES="Arbusto de peral plantado">Planted pear bush</name>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedpeartree</maxAgeItem>
+		<action>qcut</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedbushpear>
+	<plantedpeartree>
+		<name esES="Peral plantado">Planted pear tree</name>
+		<locked>true</locked>
+		<action>qchopfruittrees</action>
+		<action>qharvestppear</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedpeartree>
+	<plantedharvestingpeartree>
+		<name esES="Peral plantado">Planted pear tree</name>
+		<spawn>pear</spawn>
+		<spawnTurns>1</spawnTurns>
+		<maxAge>2</maxAge>
+		<maxAgeItem>plantedharvestedpeartree</maxAgeItem>
+		<action>qchop</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedharvestingpeartree>
+	<plantedharvestedpeartree>
+		<name esES="Peral plantado">Planted pear tree</name>
+		<maxAge>1d2880+6400</maxAge>
+		<maxAgeItem>plantedpeartree</maxAgeItem>
+		<action>qchop</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedharvestedpeartree>
+
+	<delete id="wheatseed" />
+	<delete id="plantedwheat" />
+	<wheatseed>
+		<name esES="Semilla de grano">Wheat seedling</name>
+		<maxAge>1d720+2160</maxAge>
+		<maxAgeItem>plantedwheat</maxAgeItem>
+		<action>qcut</action>
+		<value>25</value>
+	</wheatseed>
+	<plantedwheat>
+		<name esES="Grano">Wheat</name>
+		<action>qcut</action>
+		<action>qharvestwheat</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedwheat>
+
+	<delete id="sugarcaneseed" />
+	<delete id="plantedsugarcane" />
+	<sugarcaneseed>
+		<name esES="Semilla de caña de azúcar">Sugarcane seed</name>
+		<description esES="Necesita estar cerca del agua para crecer">Needs to be close to water to grow</description>
+		<maxAge>1d720+2160</maxAge>
+		<maxAgeItem>plantedsugarcane</maxAgeItem>
+		<maxAgeNeedsWater>true</maxAgeNeedsWater>
+		<maxAgeNeedsWaterRadius>2</maxAgeNeedsWaterRadius>
+		<action>qcut</action>
+		<value>25</value>
+	</sugarcaneseed>
+	<plantedsugarcane>
+		<name esES="Caña de azúcar">Sugarcane</name>
+		<action>qcut</action>
+		<action>qharvestsugarcane</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedsugarcane>
+
+	<delete id="bambooseed" />
+	<delete id="plantedbamboo" />
+	<bambooseed>
+		<name esES="Semilla bambú">Bamboo seed</name>
+		<description esES="Necesita estar cerca del agua para crecer">Needs to be close to water to grow</description>
+		<maxAge>1d720+2160</maxAge>
+		<maxAgeItem>plantedbamboo</maxAgeItem>
+		<maxAgeNeedsWater>true</maxAgeNeedsWater>
+		<maxAgeNeedsWaterRadius>2</maxAgeNeedsWaterRadius>
+		<action>qcut</action>
+		<value>25</value>
+	</bambooseed>
+	<plantedbamboo>
+		<name esES="Bambú">Bamboo</name>
+		<action>qcut</action>
+		<action>qharvestbamboo</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedbamboo>
+
+	<delete id="treeseed" />
+	<delete id="plantedbush" />
+	<delete id="plantedtree" />
+	<treeseed>
+		<name esES="Semilla de árbol">Tree seedling</name>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedbush</maxAgeItem>
+		<action>qcut</action>
+	</treeseed>
+	<plantedbush>
+		<name esES="Arbusto plantado">Planted bush</name>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedtree</maxAgeItem>
+		<action>qcut</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedbush>
+	<plantedtree>
+		<name esES="Árbol plantado">Planted tree</name>
+		<action>qchopplantedtree</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedtree>
+
+	<delete id="tree2seed" />
+	<delete id="plantedbush2" />
+	<delete id="plantedtree2" />
+	<tree2seed>
+		<name esES="Semilla de pino">Pine tree seedling</name>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedbush2</maxAgeItem>
+		<action>qcut</action>
+	</tree2seed>
+	<plantedbush2>
+		<name esES="Arbusto de pino plantado">Planted pine bush</name>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedtree2</maxAgeItem>
+		<action>qcut</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedbush2>
+	<plantedtree2>
+		<name esES="Pino plantado">Planted pine tree</name>
+		<action>qchopplantedtree2</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedtree2>
+
+	<delete id="snowcherryseed" />
+	<delete id="plantedbushsnowcherry" />
+	<delete id="plantedsnowcherrytree" />
+	<delete id="plantedharvestingsnowcherrytree" />
+	<delete id="plantedharvestedsnowcherrytree" />
+	<snowcherryseed>
+		<name esES="Semilla de cerezo de nieve">Snowcherry seedling</name>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedbushsnowcherry</maxAgeItem>
+		<action>qcut</action>
+	</snowcherryseed>
+	<plantedbushsnowcherry>
+		<name esES="Arbusto de cerezo de nieve plantado">Planted snowcherry bush</name>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedsnowcherrytree</maxAgeItem>
+		<action>qcut</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedbushsnowcherry>
+	<plantedsnowcherrytree>
+		<name esES="Cerezo de nieve plantado">Planted snowcherry tree</name>
+		<locked>true</locked>
+		<action>qchopfruittrees</action>
+		<action>qharvestpsnowcherry</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedsnowcherrytree>
+	<plantedharvestingsnowcherrytree>
+		<name esES="Cerezo de nieve plantado">Planted snowcherry tree</name>
+		<spawn>snowcherry</spawn>
+		<spawnTurns>1</spawnTurns>
+		<maxAge>2</maxAge>
+		<maxAgeItem>plantedharvestedsnowcherrytree</maxAgeItem>
+		<action>qchop</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedharvestingsnowcherrytree>
+	<plantedharvestedsnowcherrytree>
+		<name esES="Cerezo de nieve plantado">Planted snowcherry tree</name>
+		<maxAge>1d2880+6400</maxAge>
+		<maxAgeItem>plantedsnowcherrytree</maxAgeItem>
+		<action>qchop</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedharvestedsnowcherrytree>
+
+	<delete id="bananaseed" />
+	<delete id="plantedbushbanana" />
+	<delete id="plantedbananatree" />
+	<delete id="plantedharvestingbananatree" />
+	<delete id="plantedharvestedbananatree" />
+	<bananaseed>
+		<name esES="Semilla de banano">Banana tree seedling</name>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedbushbanana</maxAgeItem>
+		<action>qcut</action>
+	</bananaseed>
+	<plantedbushbanana>
+		<name esES="Arbusto de banano plantado">Planted banana bush</name>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedbananatree</maxAgeItem>
+		<action>qcut</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedbushbanana>
+	<plantedbananatree>
+		<name esES="Banano plantado">Planted banana tree</name>
+		<locked>true</locked>
+		<action>qchopfruittrees</action>
+		<action>qharvestpbanana</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedbananatree>
+	<plantedharvestingbananatree>
+		<name esES="Banano plantado">Planted banana tree</name>
+		<spawn>banana</spawn>
+		<spawnTurns>1</spawnTurns>
+		<maxAge>2</maxAge>
+		<maxAgeItem>plantedharvestedbananatree</maxAgeItem>
+		<action>qchop</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedharvestingbananatree>
+	<plantedharvestedbananatree>
+		<name esES="Banano plantado">Planted banana tree</name>
+		<maxAge>1d2880+6400</maxAge>
+		<maxAgeItem>plantedbananatree</maxAgeItem>
+		<action>qchop</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedharvestedbananatree>
+
+	<delete id="blueradishseed" />
+	<delete id="plantedsproutblueradish" />
+	<delete id="plantedblueradishplant" />
+	<delete id="plantedharvestingblueradishplant" />
+	<delete id="plantedharvestedblueradishplant" />
+	<blueradishseed>
+		<name esES="Semilla de rábano azul">Blue radish seedling</name>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedsproutblueradish</maxAgeItem>
+		<action>qcut</action>
+	</blueradishseed>
+	<plantedsproutblueradish>
+		<name esES="Brote de rábano azul">Blue radish sprout</name>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedblueradishplant</maxAgeItem>
+		<action>qcut</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedsproutblueradish>
+	<plantedblueradishplant>
+		<name esES="Planta de rábano azul">Blue radish plant</name>
+		<locked>true</locked>
+		<action>qcut</action>
+		<action>qharvestpblueradish</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedblueradishplant>
+	<plantedharvestingblueradishplant>
+		<name esES="Planta de rábano azul">Blue radish plant</name>
+		<spawn>blueradish</spawn>
+		<spawnTurns>1</spawnTurns>
+		<maxAge>2</maxAge>
+		<maxAgeItem>plantedharvestedblueradishplant</maxAgeItem>
+		<action>qcut</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedharvestingblueradishplant>
+	<plantedharvestedblueradishplant>
+		<name esES="Planta de rábano azul">Blue radish plant</name>
+		<maxAge>1d2880+6400</maxAge>
+		<maxAgeItem>plantedblueradishplant</maxAgeItem>
+		<action>qcut</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedharvestedblueradishplant>
+
+	<delete id="plantedjunglemushroomseed" />
+	<delete id="plantedmushroom" />
+	<plantedjunglemushroomseed>
+		<name esES="Semilla de seta de jungla">Jungle mushroom seedling</name>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedmushroom</maxAgeItem>
+		<locked>true</locked>
+		<action>qcut</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedjunglemushroomseed>
+	<plantedmushroom>
+		<name esES="Seta de jungla">Jungle mushroom</name>
+		<locked>true</locked>
+		<action>qcut</action>
+		<action>qpickpmushroom</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedmushroom>
+
+	<delete id="cavemushroomseed" />
+	<delete id="plantedcavemushroom" />
+	<cavemushroomseed>
+		<name esES="Semilla de seta de caverna">Cave mushroom seedling</name>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedcavemushroom</maxAgeItem>
+		<locked>true</locked>
+		<action>qcut</action>
+	</cavemushroomseed>
+	<plantedcavemushroom>
+		<name esES="Seta de caverna">Cave mushroom</name>
+		<locked>true</locked>
+		<action>qcut</action>
+		<action>qpickpcavemushroom</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedcavemushroom>
+
+	<delete id="cactusseed" />
+	<delete id="plantedcactus" />
+	<delete id="plantedharvestingcactus" />
+	<delete id="plantedharvestedcactus" />
+	<cactusseed>
+		<name esES="Semilla de cactus">Cactus seedling</name>
+		<maxAge>1d1440+320</maxAge>
+		<maxAgeItem>plantedharvestedcactus</maxAgeItem>
+		<locked>true</locked>
+		<action>qcut</action>
+	</cactusseed>
+	<plantedcactus>
+		<name>Cactus</name>
+		<locked>true</locked>
+		<action>qcut</action>
+		<action>qharvestpcactus</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedcactus>
+	<plantedharvestingcactus>
+		<name>Cactus</name>
+		<spawn>cactusfruit</spawn>
+		<spawnTurns>1</spawnTurns>
+		<maxAge>2</maxAge>
+		<maxAgeItem>plantedharvestedcactus</maxAgeItem>
+		<action>qcut</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedharvestingcactus>
+	<plantedharvestedcactus>
+		<name>Cactus</name>
+		<maxAge>1d2880+2880</maxAge>
+		<maxAgeItem>plantedcactus</maxAgeItem>
+		<action>qcut</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedharvestedcactus>
+
+	<delete id="jungleseed" />
+	<delete id="plantedjunglebush" />
+	<delete id="plantedjungletree" />
+	<jungleseed>
+		<name esES="Semilla de árbol de jungla">Jungle tree seedling</name>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedjunglebush</maxAgeItem>
+		<action>qcut</action>
+	</jungleseed>
+	<plantedjunglebush>
+		<name esES="Arbusto de árbol de jungla plantado">Planted jungle tree bush</name>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedjungletree</maxAgeItem>
+		<action>qcut</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedjunglebush>
+	<plantedjungletree>
+		<name esES="Árbol de jungla plantado">Planted jungle tree</name>
+		<action>qchopplantedjungletree</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedjungletree>
+
+	<delete id="snowseed" />
+	<delete id="plantedsnowbush" />
+	<delete id="plantedsnowtree" />
+	<snowseed>
+		<name esES="Semilla de árbol de nieve">Snow tree seedling</name>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedsnowbush</maxAgeItem>
+		<action>qcut</action>
+	</snowseed>
+	<plantedsnowbush>
+		<name esES="Arbusto de árbol de nieve plantado">Planted snow tree bush</name>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedsnowtree</maxAgeItem>
+		<action>qcut</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedsnowbush>
+	<plantedsnowtree>
+		<name esES="Árbol de nieve plantado">Planted snow tree</name>
+		<action>qchopplantedsnowtree</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedsnowtree>
+
+	<delete id="palmtreeseed" />
+	<delete id="plantedbushpalmtree" />
+	<delete id="plantedpalmtree" />
+	<palmtreeseed>
+		<name esES="Semilla de palmera">Palm tree seedling</name>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedbushpalmtree</maxAgeItem>
+		<action>qcut</action>
+	</palmtreeseed>
+	<plantedbushpalmtree>
+		<name esES="Arbusto de palmera plantado">Planted palm tree bush</name>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedpalmtree</maxAgeItem>
+		<action>qcut</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedbushpalmtree>
+	<plantedpalmtree>
+		<name esES="Arbusto de palmera plantado">Planted palm tree</name>
+		<action>qchopplantedpalmtree</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedpalmtree>
+
+	<delete id="redflowerseed" />
+	<delete id="plantedredflower" />
+	<redflowerseed>
+		<name esES="Semilla de flor roja">Red flower seedling</name>
+		<maxAge>1d720+720</maxAge>
+		<maxAgeItem>plantedredflower</maxAgeItem>
+		<action>qcut</action>
+		<value>35</value>
+	</redflowerseed>
+	<plantedredflower>
+		<name esES="Flores rojas">Red flowers</name>
+		<action>qcut</action>
+		<action>qgatherplantedredflower</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedredflower>
+
+	<delete id="blueflowerseed" />
+	<delete id="plantedblueflower" />
+	<blueflowerseed>
+		<name esES="Semilla de flor azul">Blue flower seedling</name>
+		<maxAge>1d720+720</maxAge>
+		<maxAgeItem>plantedblueflower</maxAgeItem>
+		<action>qcut</action>
+		<value>35</value>
+	</blueflowerseed>
+	<plantedblueflower>
+		<name esES="Flores azules">Blue flowers</name>
+		<action>qcut</action>
+		<action>qgatherplantedblueflower</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedblueflower>
+
+	<delete id="yellowflowerseed" />
+	<delete id="plantedyellowflower" />
+	<yellowflowerseed>
+		<name esES="Semilla de flor amarilla">Yellow flower seedling</name>
+		<maxAge>1d720+720</maxAge>
+		<maxAgeItem>plantedyellowflower</maxAgeItem>
+		<action>qcut</action>
+		<value>35</value>
+	</yellowflowerseed>
+	<plantedyellowflower>
+		<name esES="Flores amarillas">Yellow flowers</name>
+		<action>qcut</action>
+		<action>qgatherplantedyellowflower</action>
+		<canBeUnlocked>false</canBeUnlocked>
+	</plantedyellowflower>
+</items>

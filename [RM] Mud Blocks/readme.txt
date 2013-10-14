@@ -15,4 +15,4 @@ x	You cannot till for plantation
 
 This mod has been tested to work on v14b. It should work on all versions down to v9.
 
-I have released this mod as part of the GPL which means that you may use this mod and distribute it freely but you must include this file with it. If you modify the files and pass it on then please give credit where due.
+I have released this mod as part of the GPLv3 which means that you may use this mod and distribute it freely but you must include this file with it. If you modify the files and pass it on then please give credit where due.
